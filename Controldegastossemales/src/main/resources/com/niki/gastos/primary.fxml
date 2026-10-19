@@ -11,10 +11,8 @@
    <children>
       <Label text="Control de Gastos Semanales" />
       
-      <!-- Contenedor principal para organizar las columnas lado a lado -->
       <HBox alignment="CENTER" spacing="30.0">
          <children>
-            <!-- Columna Izquierda: Entradas de Gastos -->
             <VBox spacing="10.0">
                <children>
                   <HBox alignment="CENTER_LEFT" spacing="10.0">
@@ -50,7 +48,7 @@
                </children>
             </VBox>
 
-            <!-- Columna Derecha: Estadísticas -->
+           
             <VBox spacing="10.0">
                <children>
                   <Label text="Estadísticas" />
@@ -62,8 +60,7 @@
             </VBox>
          </children>
       </HBox>
-
-      <!-- Fila de Botones Inferiores -->
+   
       <HBox alignment="CENTER" spacing="15.0">
          <children>
             <Button onAction="#calcular" text="Calcular estadísticas" />
@@ -75,3 +72,4 @@
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
 </VBox>
+
