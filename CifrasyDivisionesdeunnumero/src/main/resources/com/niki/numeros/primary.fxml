@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="456.0" prefWidth="605.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.niki.numeros.PrimaryController">
+   <children>
+      <HBox prefHeight="64.0" prefWidth="437.0">
+         <children>
+            <Label text="Ingrese un numero">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField />
+            <Button mnemonicParsing="false" text="Analizar" />
+            <Button mnemonicParsing="false" text="Limpiar" />
+         </children>
+      </HBox>
+      <Label text="Divisores" />
+      <HBox prefHeight="239.0" prefWidth="565.0">
+         <children>
+            <HBox prefHeight="239.0" prefWidth="295.0">
+               <children>
+                  <Pane prefHeight="239.0" prefWidth="205.0">
+                     <children>
+                        <Label layoutX="8.0" layoutY="-15.0" prefHeight="72.0" prefWidth="109.0" text="Cantidad de cifras " />
+                        <Label layoutX="7.0" layoutY="30.0" prefHeight="53.0" prefWidth="127.0" text="Suma de cifras impares" textAlignment="CENTER" />
+                        <Label layoutX="7.0" layoutY="83.0" text="Suma de cifras pares" />
+                        <Label layoutX="7.0" layoutY="120.0" text="Suma total de cifras" />
+                        <Label layoutX="7.0" layoutY="159.0" text="Cifras mayor" />
+                        <Label layoutX="7.0" layoutY="190.0" text="Cifras menor" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutY="14.0" prefHeight="25.0" prefWidth="149.0" />
+                        <TextField layoutY="46.0" />
+                        <TextField layoutY="79.0" />
+                        <TextField layoutY="120.0" />
+                        <TextField layoutY="155.0" />
+                        <TextField layoutY="191.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="239.0" prefWidth="276.0">
+               <content>
+                  <TextArea prefHeight="237.0" prefWidth="273.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
